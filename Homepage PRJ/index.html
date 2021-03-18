@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="language" content="NL">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Eindcase HTML">
+    <meta name="author" content="Nevin de Roos">
+    <meta name="keywords" content="HTML eindcase">
+<title></title>
+    <script src="./js/code.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap" rel="stylesheet">
+</head>
+    <header>
+        <article class="header-image">
+            <img class="logo" src="./image/Logo Energy.png" alt="Logo website" style="height: 100px;">
+        </article>
+        <nav>
+            <li>
+                <a class="active" href="index.html">HOME</a>
+                <a href="#">WEBSHOP</a>
+                <a href="#">NIEUWS</a>
+                <a href="#">EVENEMENTEN & NIEUWS</a>
+                <a href="#">BEDRIJFSINFORMATIE</a>
+                <a href="#">CONTACT</a>
+            </li>
+        </nav>
+    </header>
+    <main>
+        <section class="kop-een">
+            <article>
+                <h2><b>PROBEER HET ZELF</b></h2>
+                <h1>BERIJK NIEUWE<br> GRENZEN MET ONZE<br> ENERGY DRINK</h1>
+                <p>Probeer al onze smaken!</p>
+                <button class="btn warning">SHOP NOW</button>
+            </article>
+            <article class="orange-image">
+                <img src="./image/Orange.png" alt="Blikje orange energy" style="height: 500px;">
+            </article>
+        </section>
+        <section class="producten">
+            <article class="text-een">
+                <h2>Onze producten</h2>
+            </article>
+            <article class="blikjes">
+                <div class="image">
+                    <img class="image__img" class="color" src="./image/Strawberry.png" alt="Bricks" style="height: 400px; width: 200px;">
+                    <div class="image__overlay image__overlay--primary">
+                        <div class="image__title">Meer informatie?</div>
+                        <p class="image__description">
+                            Klik dan hier!
+                        </p>
+                    </div>
+                </div>
+                <div class="image">
+                    <img class="image__img" class="color" src="./image/Apple.png" alt="Bricks" style="height: 400px; width: 200px;">
+                    <div class="image__overlay image__overlay--primary">
+                        <div class="image__title">Meer informatie?</div>
+                        <p class="image__description">
+                            Klik dan hier!
+                        </p>
+                    </div>
+                </div>
+                <div class="image">
+                    <img class="image__img" class="color" src="./image/Orange.png" alt="Bricks" style="height: 400px; width: 200px;">
+                    <div class="image__overlay image__overlay--primary">
+                        <div class="image__title">Meer informatie?</div>
+                        <p class="image__description">
+                            Klik dan hier!
+                        </p>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section class="kop-een">
+            <article>
+                <h2><b>NIEUWS EN EVENEMENTEN</b></h2>
+                <h1 class="informatie">WIL JE MEER INFORMATIE WETEN<br>OVER ONZE PRODUCTEN OF<br>EVENEMENTEN KLIK DAN HIER<br>ONDER OP DE KNOP!</h1>
+                <button class="btn2 warning">KLIK HIER!</button>
+            </article>
+            <article class="slideshow">
+                <div class="w3-content w3-section" style="max-width:500px">
+                    <img class="mySlides" src="./image/one.jpg" style="width: 500px; height: 300px;">
+                    <img class="mySlides" src="./image/two.jpg" style="width: 500px; height: 300px;">
+                    <img class="mySlides" src="./image/three.jpg" style="width: 500px; height: 300px;">
+              </div>
+            </article>
+            <article>
+            <script>
+                var myIndex = 0;
+                carousel();
+
+                function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                }
+                myIndex++;
+                if (myIndex > x.length) {myIndex = 1}    
+                x[myIndex-1].style.display = "block";  
+                setTimeout(carousel, 2000); // Change image every 2 seconds
+                }
+            </script>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</html>
